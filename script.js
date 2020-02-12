@@ -28,5 +28,5 @@ function changeAnimationTime() {
 /* setInterval(changeAnimationTime, 1000); */
 window.onload = function() {
   startTimer()
-  // move()
+  move()
 }
