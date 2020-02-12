@@ -1,5 +1,5 @@
 :root {
-  --animation-time: 3s;
+  --animation-time: 2s;
 }
 
 ul {
@@ -125,27 +125,64 @@ body {
   padding: 0 2em;
 }
 
-.move-right {
-  animation: moveRight var(--animation-time) linear;
-  /* -webkit-animation: moveRight 4s linear 0.5s 1 normal; */
-  animation-iteration-count: infinite;
-  /* -webkit-animation-fill-mode: forwards; */
-}
-
-@keyframes moveRight {
-  from {
-    margin-left: 0%;
-  }
-
-  to {
-    margin-left: calc(100% - 40px); /*TODO fix this 80px*/
-  }
-}
-
 .spacer {
   padding: 10px 0;
 }
 
 .about {
   font-weight: bold;
+}
+
+.move-right {
+  -webkit-animation: moveRight var(--animation-time) ease;
+  -moz-animation: moveRight var(--animation-time) ease;
+  -o-animation: moveRight var(--animation-time) ease;
+  animation: moveRight var(--animation-time) ease;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  /* -webkit-animation-fill-mode: forwards; */
+}
+@-webkit-keyframes moveRight {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  }
+}
+@-moz-keyframes moveRight {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  }
+}
+@-ms-keyframes moveRight {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  }
+}
+@-o-keyframes moveRight {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  }
+}
+@keyframes moveRight {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  }
 }
