@@ -1,0 +1,151 @@
+:root {
+  --animation-time: 7s;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.verification-code-container {
+  background-color: #b2bec3;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.verification-code {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.timer-container {
+  position: absolute;
+  top: 25%;
+  right: 1%;
+}
+
+.ticket-container {
+  margin-top: 1em;
+  background-color: #fff;
+}
+
+.badge {
+  color: #fff;
+  background: #dc3545;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding-right: 0.9em;
+  padding-left: 0.9em;
+  border-radius: 10rem;
+}
+
+.card {
+  padding: 0.4em 1em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trip-container {
+  margin: 0 -1em;
+}
+
+#icon {
+  position: absolute;
+  background: green;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.orange {
+  background-color: #e67e22;
+}
+
+.wrap {
+  text-align: center;
+  position: relative;
+}
+
+.links {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.wrap:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 1px solid #fff;
+  background: #fff;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fff;
+  z-index: 3;
+}
+
+.trip {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.trip li {
+  display: inline;
+}
+
+.trip li + li:before {
+  content: " - ";
+  padding: 0 2em;
+}
+
+.move-right {
+  animation: moveRight var(--animation-time) linear;
+  /* -webkit-animation: moveRight 4s linear 0.5s 1 normal; */
+  animation-iteration-count: infinite;
+  /* -webkit-animation-fill-mode: forwards; */
+}
+
+@keyframes moveRight {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: calc(100% - 40px); /*TODO fix this 80px*/
+  }
+}
+
+.spacer {
+  padding: 10px 0;
+}
+
+.about {
+  font-weight: bold;
+}
