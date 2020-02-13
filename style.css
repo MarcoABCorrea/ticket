@@ -1,5 +1,5 @@
 :root {
-  --animation-time: 2s;
+  --animation-time: 3s;
 }
 
 ul {
@@ -65,12 +65,12 @@ body {
 }
 
 #icon {
-  position: absolute;
-  background: green;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
   z-index: 5;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
 }
 
 .orange {
@@ -144,45 +144,45 @@ body {
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 
-  /* -webkit-animation-fill-mode: forwards; */
+  animation-fill-mode: forwards;
 }
 @-webkit-keyframes moveRight {
-  from {
+  0% {
     margin-left: 0%;
   }
-  to {
-    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  100% {
+    margin-left: calc(100% - 40px);
   }
 }
 @-moz-keyframes moveRight {
-  from {
+  0% {
     margin-left: 0%;
   }
-  to {
-    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  100% {
+    margin-left: calc(100% - 40px);
   }
 }
 @-ms-keyframes moveRight {
-  from {
+  0% {
     margin-left: 0%;
   }
-  to {
-    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  100% {
+    margin-left: calc(100% - 40px);
   }
 }
 @-o-keyframes moveRight {
-  from {
+  0% {
     margin-left: 0%;
   }
-  to {
-    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  100% {
+    margin-left: calc(100% - 40px);
   }
 }
 @keyframes moveRight {
-  from {
+  0% {
     margin-left: 0%;
   }
-  to {
-    margin-left: calc(100% - 40px); /*TODO fix this 40px*/
+  100% {
+    margin-left: calc(100% - 40px);
   }
 }
