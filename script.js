@@ -38,7 +38,8 @@ function randomInteger(min, max) {
 
 function setRandomIcon() {
   var randomIcon = iconNames[randomInteger(0, this.iconNames.length - 1)]
-  icon.src = "/icons/" + randomIcon
+  var baseUrl = "https://raw.githubusercontent.com/marcoabcorrea/ticket/master/icons/"
+  icon.src = baseUrl + randomIcon
 }
 
 function changeAnimationTime() {
